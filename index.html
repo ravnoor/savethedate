@@ -8,7 +8,8 @@
 
 <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Source+Serif+Pro' rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Cabin' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/foundation.css">
@@ -27,7 +28,7 @@ body {
   padding: 10px;
   margin-bottom: 0px;
   background: transparent;
-  font-family: 'Source Serif Pro', serif;
+  font-family: 'Lobster', serif;
   font-weight: bold;
   font-size: 20px;
   background: transparent;
@@ -37,7 +38,7 @@ body {
   [data-magellan-expedition] .sub-nav {
     margin-bottom: 0px;
     background: transparent;
-    font-family: 'Source Serif Pro', serif;
+    font-family: 'Lobster', serif;
     font-weight: bold;
     font-size: 20px;
     background: transparent;
@@ -45,26 +46,52 @@ body {
     font-variant: small-caps;
  }
 
-.top-bar .title-area .name a {
+.top-bar .title-area a {
     margin-bottom: 0px;
     background: transparent;
-    font-family: 'Source Serif Pro', serif;
-    font-size: 18px;
-    color: #fff;
+    font-size: 24px;
+    color: #C05154;
+    margin-left: 20px;
+    font-family: 'Lobster', serif;
+    line-height: 50px;
  }
 
  .top-bar {
     margin-bottom: 0px;
-    background: #1184B5;
+    background: transparent;
+ }
+
+ .top-bar p {
+    margin-bottom: 0px;
+    color: #C05154;
+ }
+
+.reveal-modal-bg {
+    margin-bottom: 0px;
+    color: #C05154;
  }
 
 .top-bar-section .right li.active:not(.has-form) a:not(.button) {
     margin-bottom: 0px;
     background: #1184B5;
-    font-family: 'Source Serif Pro', serif;
+    font-family: 'Lobster', serif;
     font-size: 18px;
     color: #fff;
  }
+
+ #myModal {
+    color: #1184B5;
+ 
+    -webkit-border-radius:8px;
+    -moz-border-radius:8px;
+    border-radius:8px;
+ 
+    position:absolute !important;
+    top:50% !important;
+    left:50% !important;
+    z-index:101;
+}
+
 
 </style>
 
@@ -77,15 +104,25 @@ body {
 <script src="js/foundation/foundation.js"></script>
 <script src="js/foundation/foundation.joyride.js"></script>
 <script src="js/foundation/foundation.topbar.js"></script>
+<script src="js/foundation/foundation.reveal.js"></script>
 
 
 <nav class="top-bar" data-topbar role="navigation">
+  <div class="fixed">
   <ul class="title-area">
-    <li class="name">
-      <h1><a href="#" target="_blank">Save the Date!</a></h1>
-    </li>
+    <a href="#" data-reveal-id="myModal">How to reach us?</a>
+
+    <div id="myModal" class="reveal-modal tiny" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">     
+      <p><i class="fa fa-facebook-square fa-lg fa-fw"></i><a href="https://www.facebook.com/dollyzin" target="_blank">facebook.com/dollyzin</a></p>
+      <p><i class="fa fa-whatsapp fa-lg fa-fw"></i><i class="fa fa-phone fa-lg fa-fw"></i>+1.226.973.7656</p>
+      <p><i class="fa fa-globe fa-lg fa-fw"></i><a href="https://www.ravnoorgill.com" target="_blank">ravnoorgill.com</a></p>
+      <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+    </div>
   </ul>
+</div>
 </nav>
+
+
 
 
 
@@ -167,6 +204,8 @@ body {
     $(document).ready(function() {
       $(document).foundation('joyride', 'start');
     });
+
+    
   </script>
 
 
