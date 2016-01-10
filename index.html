@@ -5,13 +5,69 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Save the Date! 2.9.2014</title>
+  <title>Save the Date!</title>
 
 <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Source+Serif+Pro' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/foundation.css">
   <link rel="stylesheet" href="css/timeline.css">
 
+<style>
+
+body {
+  overflow-x: hidden;
+}
+
+[data-magellan-expedition] {
+  background: transparent;
+  z-index: 50;
+  min-width: 100%;
+  padding: 10px;
+  margin-bottom: 0px;
+  background: transparent;
+  font-family: 'Source Serif Pro', serif;
+  font-weight: bold;
+  font-size: 20px;
+  background: transparent;
+  color: #333;
+  font-variant: small-caps;
+}
+  [data-magellan-expedition] .sub-nav {
+    margin-bottom: 0px;
+    background: transparent;
+    font-family: 'Source Serif Pro', serif;
+    font-weight: bold;
+    font-size: 20px;
+    background: transparent;
+    color: #333;
+    font-variant: small-caps;
+ }
+
+.top-bar .title-area .name a {
+    margin-bottom: 0px;
+    background: transparent;
+    font-family: 'Source Serif Pro', serif;
+    font-size: 18px;
+    color: #fff;
+ }
+
+ .top-bar {
+    margin-bottom: 0px;
+    background: #1184B5;
+ }
+
+.top-bar-section .right li.active:not(.has-form) a:not(.button) {
+    margin-bottom: 0px;
+    background: #1184B5;
+    font-family: 'Source Serif Pro', serif;
+    font-size: 18px;
+    color: #fff;
+ }
+
+</style>
 
 
 </head>
@@ -21,8 +77,28 @@
 <script src="js/vendor/jquery.cookie.js"></script>
 <script src="js/foundation/foundation.js"></script>
 <script src="js/foundation/foundation.joyride.js"></script>
+<script src="js/foundation/foundation.topbar.js"></script>
 
-  <div class="path-container">
+
+<nav class="top-bar" data-topbar role="navigation">
+  <ul class="title-area">
+    <li class="name">
+      <h1><a href="#" target="_blank">Save the Date!</a></h1>
+    </li>
+  </ul>
+
+<section class="top-bar-section">
+    <!-- Right Nav Section -->
+    <ul class="right">
+      <li class="active"><a href="https://ravnoorgill.com" target="_blank">Contact Us</a></li>
+    </ul>
+
+  </section>
+</nav>
+
+
+
+<div class="path-container">
   <center>
   <div class="row path-item">
     <div class="circle circle-left">
@@ -34,9 +110,7 @@
       <h3>Dolly &amp Ravnoor</h3>
       <h3>are getting married</h3>
       <a class="button" target="_blank" href="https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=OTE0OXZxN2Zzcjk0dG1taXAzZ2kyZGNjYW8gcmF2bm9vckBt&tmsrc=ravnoor%40gmail.com">Save the Date <br>[27-02-2016]</a>
-      <!-- <br><a id="firstStop" href="https://docs.google.com/forms/d/1laMRQ8lAhMbkU-h-fmNNatGPyADZRhAhuaYO2dyHQ-o/viewform" target="_blank">Join us in our celebrations!</a> -->
-      <br>
-      <p>Details to follow!</p>
+      <br><a id="firstStop" href="https://docs.google.com/forms/d/1laMRQ8lAhMbkU-h-fmNNatGPyADZRhAhuaYO2dyHQ-o/viewform" target="_blank">Join us in our celebrations!</a>
     </div>
   </div>
   <div class="row path-item">
@@ -88,13 +162,14 @@
 </div>
 
   <ol class="joyride-list" data-joyride>
-    <li data-id="firstStop" data-text="Come, find out!" data-options="tip_location:bottom">
+    <li data-id="firstStop" data-text="Come, find out!" data-options="tip_location:right">
       <p>How it all began?</p>
     </li>
-    <li data-id="numero1" data-text="Thanks!">
+    <li data-id="numero1" data-text="Scroll up!"  data-options="tip_location:right">
       <p>It all started here!</p>
     </li>
   </ol>
+
 
   <script>
     $(document).foundation();
@@ -102,5 +177,8 @@
       $(document).foundation('joyride', 'start');
     });
   </script>
+
+
+
 </body>
 </html>
