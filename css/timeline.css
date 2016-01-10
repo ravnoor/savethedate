@@ -84,7 +84,7 @@
 /*------------------------------------
  mobile timeline styles
 ------------------------------------*/
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 640px) {
   .path-container {
     text-align: center;
   }
