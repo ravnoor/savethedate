@@ -74,27 +74,35 @@ body {
 
 .top-bar-section .divider li.active:not(.has-form) a:not(.button) {
     margin-bottom: 0px;
-    background: #1184B5;
+    background: transparent;
     font-family: 'Lobster', serif;
     font-size: 18px;
-    color: #fff;
+    color: #C05154;
  }
 
-.top-bar-section ul {
-    background: #1184B5;
-    font-size: 16px;
-    margin: 0;
+.top-bar ul.title-area li.name a {
+    background: transparent;
+    font-size: 26px;
+    color: #C05154;
 }
 
-@media only screen and (min-width: 40.063em)
-.top-bar-section > ul > .divider, .top-bar-section > ul > [role="separator"] {
-    border-bottom: none;
-    border-top: none;
-    border-right: solid 0px transparent;
-    clear: none;
-    height: 45px;
-    width: 0;
+
+
+.path-container {
+    margin-top: 50px;
+    margin-bottom: 70px;
+    z-index: 2;
 }
+
+.row {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    max-width: 62.5rem;
+}
+
 
 @media only screen and (min-width: 40.063em)
 .top-bar-section li:not(.has-form) a:not(.button) {
@@ -110,32 +118,6 @@ body {
     max-height: 110px;
     left: inherit;  }
   }
-@media only screen and (min-width: 40em) {
-  .top-bar {
-    text-align: center; }
-
-  ul.center-buttons {
-    display: inline-block; }
-
-  .logo {
-    left: 5px;
-    top: -2px;
-    position: absolute; } }
-  .logo {
-    max-width: 2rem;
-    margin-top: -3px;
-    margin-left: 5px; }
-
-  .menu-icon {
-    padding-top: 1.2rem; }
-
-  .top-bar.expanded {
-    background: #333333; }
-
-  .logo {
-    margin-top: .5rem; }
-
-
 
 </style>
 
@@ -151,18 +133,12 @@ body {
 <script src="js/foundation/foundation.reveal.js"></script>
 
 
-<nav class="top-bar" data-topbar>
-
-  <section class="top-bar-section">
-    <!-- Right Nav Section -->
-    <ul class="center-buttons">
-      <li class="divider"></li>
-      <li><i class="fa fa-facebook-square"></i><a href="https://www.facebook.com/dollyzin" target="_blank">/dolly</a></li>
-      <li class="divider"></li>
-      <li><i class="fa fa-globe"></i><a href="https://www.ravnoorgill.com" target="_blank">/ravnoor</a></li>
-      <li class="divider"></li>
-    </ul>
-  </section>
+<nav class="top-bar" data-topbar role="navigation">
+  <ul class="title-area">
+    <li class="name">
+      <h1><a href="https://www.ravnoorgill.com" target="_blank">.contact</a></h1>
+    </li>
+  </ul>
 </nav>
 
 
