@@ -1,0 +1,251 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,900|Linden+Hill:400,400italic);
+@import url(http://fonts.googleapis.com/css?family=Gilda+Display&text=%26);
+
+// Font Stacks
+$main-heading-fontstack: Lato, Helvetica, Arial, sans-serif;
+$heading-fontstack: Lato, Helvetica, Arial, sans-serif;
+$body-fontstack: "Linden Hill", Georgia, "Times New Roman", Times, serif;
+
+// Column widths and breakpoints
+$max-col-width: 900px;
+$bp-full: 1000px;
+$bp-tablet: 750px;
+$bp-phone: 500px;
+
+// Baseline for math
+$baseline: 8px;
+
+// Colors
+$brown: #8D411C;
+$green: #0d8029;
+$grey: #333333;
+$lightgrey: #e1e1e1;
+$white: #fcfcfc;
+
+@mixin bgcover($url) {
+  background: url($url) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+     -moz-background-size: cover;
+       -o-background-size: cover;
+          background-size: cover;
+}
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+
+@import url("normalize.min.css");
+
+
+.mainbodycol {
+	margin-left: auto;
+	margin-right: auto;
+	width: $max-col-width;
+	@media screen and (max-width: $bp-full) {
+		width: 90%;
+	}
+}
+
+.mainsection {
+	margin-top: $baseline * 4;
+}
+
+
+header {
+	@include bgcover("../images/pcbg.jpg");
+}
+
+h1 {
+	font-family: $main-heading-fontstack;
+	font-size: $baseline * 8;
+	font-weight: 300;
+	line-height: 1;
+	text-transform: uppercase;
+	padding: ($baseline * 12) 0 0 0;
+	margin: 0;
+	color: $white;
+}
+
+h2, h3, h4 {
+	font-family: $heading-fontstack;
+}
+
+h2 {
+	font-size: $baseline * 5;
+	margin-top: $baseline * 2;
+	margin-bottom: $baseline * 2;
+	@media screen and (max-width: $bp-phone) {
+		font-size: $baseline * 4;
+	}
+	a {
+		color: #8e8264;
+	}
+}
+
+h3 {
+	font-size: $baseline * 2.5;
+	font-weight: 400;
+	margin-top: $baseline * 1.5;
+	margin-bottom: $baseline * 2;
+	color: $grey;
+	text-transform: uppercase;
+}
+
+h4 {
+  font-size: $baseline * 2;
+  font-weight: 300;
+  margin-top: $baseline;
+  margin-bottom: $baseline * 1;
+}
+
+p, li, label {
+	color: $grey;
+	font-family: $body-fontstack;
+	font-size: $baseline * 2.25;
+	margin: 0 0 ($baseline * 1.5) 0;
+}
+
+body {
+	background-color: $white;
+}
+
+nav ul {
+	margin: 0;
+	padding: ($baseline * 2) 0 ($baseline * 4) 0;
+	li {
+		display: inline;
+		font-family: $heading-fontstack;
+		font-size: $baseline * 2;
+		margin-right: $baseline * 3;
+		@media screen and (max-width: $bp-phone) {
+			display: block;
+			margin-top: $baseline * 2.5;
+			margin-bottom: $baseline * 2.5;
+		}
+		a {
+			color: $white;
+			text-decoration: none;
+			font-weight: 900;
+		}
+	}
+}
+
+.fancytitleamp {
+	font-family: "Gilda Display";
+	font-size: $baseline * 10;
+}
+
+.halfcol {
+	float: left;
+	width: 45%;
+	margin-right: 5%;
+	@media screen and (max-width: $bp-tablet) {
+		float: none;
+		width: 100%;
+		margin-right: 0;
+	}
+}
+
+.thirdcol {
+  float: left;
+  width: 30%;
+  margin-right: 5%;
+	@media screen and (max-width: $bp-tablet) {
+		float: none;
+		width: 100%;
+		margin-right: 0;
+	}
+}
+
+.last {
+  margin-right: 0;
+}
+
+.newrow {
+	margin-right: 0;
+	clear: both;
+}
+
+.mapframe {
+	float: left;
+	margin-right: 5%;
+	margin-bottom: $baseline * 2;
+	@media screen and (max-width: $bp-tablet) {
+		float: none;
+		max-width: 100%;
+	}
+}
+
+.subtitle {
+	color: $white;
+	font-size: $baseline * 2;
+	margin-top: 0;
+	margin-bottom: ($baseline * 2);
+}
+
+hr {
+	border: 0;
+	border-top: 1px dotted ($grey * 4);
+	clear: both;
+	margin-top: ($baseline * 2) - 1;
+	margin-bottom: $baseline * 3;
+}
+
+input, button {
+	font-family: $heading-fontstack;
+}
+
+
+a {
+	color: #1643a4;
+}
+
+
+/* Mailchimp Form Stylin' */
+/* subscribe button */
+#mc-embedded-subscribe {
+	color: white;
+	background-color: $green;
+	padding: ($baseline / 2) ($baseline * 2);
+	@include border-radius(4px);
+}
+
+/* the whole stinkin' div */
+#mc_embed_signup {
+	display: inline-block;
+	padding: $baseline * 2;
+	background-color: $lightgrey;
+	border: 1px dotted ($grey * 4);
+	margin-bottom: $baseline * 2;
+	@include border-radius($baseline);
+	@media screen and (max-width: $bp-phone) {
+		display: block;
+	}
+}
+
+/* email field */
+#mce-EMAIL {
+	margin-left: $baseline;
+	margin-right: $baseline;
+	padding: $baseline / 2;
+	@media screen and (max-width: $bp-phone) {
+		margin-left: 0px;
+		width: 95%;
+	}
+}
+
+#mce-EMAIL, #mc_embed_signup, #mc-embedded-subscribe {
+	border-width: 1px;
+	border-style: solid;
+}
+
+#mce-EMAIL, #mc-embedded-subscribe {
+	@media screen and (max-width: $bp-phone) {
+		display: block;
+		margin-top: $baseline;
+	}
+}

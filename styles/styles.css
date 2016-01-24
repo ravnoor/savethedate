@@ -1,0 +1,223 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,900|Linden+Hill:400,400italic);
+@import url(http://fonts.googleapis.com/css?family=Gilda+Display&text=%26);
+@import url(https://fonts.googleapis.com/css?family=Arvo:400,400italic,700,700italic);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic,700,700italic,800,800italic);
+@import url(https://fonts.googleapis.com/css?family=Shadows+Into+Light+Two:400);
+@import url("normalize.min.css");
+.mainbodycol {
+  margin-left: auto;
+  margin-right: auto;
+  width: 900px
+}
+@media screen and (max-width: 1000px) {
+  .mainbodycol {
+    width: 90%
+  }
+}
+.mainsection {
+  margin-top: 32px
+}
+header {
+  background: url("../images/bg.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover
+}
+h1 {
+  font-family: 'Shadows Into Light Two', cursive;
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 1;
+  padding: 96px 0 0 0;
+  margin: 0;
+  color: #fcfcfc
+}
+
+.heart {
+  color: #FB391C;
+}
+
+h2, h3, h4 {
+  font-family: Lato, Helvetica, Arial, sans-serif
+}
+h2 {
+  font-size: 40px;
+  margin-top: 16px;
+  margin-bottom: 16px
+}
+@media screen and (max-width: 500px) {
+  h2 {
+    font-size: 32px
+  }
+}
+h2 a {
+  color: #8e8264
+}
+h3 {
+  font-size: 20px;
+  font-weight: 400;
+  margin-top: 12px;
+  margin-bottom: 16px;
+  color: #333;
+  text-transform: uppercase
+}
+h4 {
+  font-size: 18px;
+  font-weight: 300;
+  margin-top: 8px;
+  margin-bottom: 8px
+}
+p, li, label {
+  color: #333;
+  font-family: "Arvo","Linden Hill", Georgia, "Times New Roman", Times, serif;
+  font-weight: 400;
+  font-size: 16px;
+  margin: 0 0 12px 0
+}
+body {
+  background-color: #fcfcfc
+}
+nav ul {
+  margin: 0;
+  padding: 16px 0 32px 0
+}
+nav ul li {
+  display: inline;
+  font-family: Lato, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  margin-right: 24px
+}
+@media screen and (max-width: 500px) {
+  nav ul li {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px
+  }
+}
+nav ul li a {
+  color: #fcfcfc;
+  text-decoration: none;
+  font-weight: 900
+}
+.fancytitleamp {
+  font-family: "Gilda Display";
+  font-size: 80px
+}
+.fancytitleamp2 {
+  font-family: "Gilda Display";
+  font-size: 14px
+}
+.halfcol {
+  float: left;
+  width: 45%;
+  margin-right: 5%
+}
+@media screen and (max-width: 750px) {
+  .halfcol {
+    float: none;
+    width: 100%;
+    margin-right: 0
+  }
+}
+.thirdcol {
+  float: left;
+  width: 30%;
+  margin-right: 5%
+}
+@media screen and (max-width: 750px) {
+  .thirdcol {
+    float: none;
+    width: 100%;
+    margin-right: 0
+  }
+}
+.last {
+  margin-right: 0
+}
+.newrow {
+  margin-right: 0;
+  clear: both
+}
+.mapframe {
+  float: left;
+  margin-right: 5%;
+  margin-bottom: 16px
+}
+@media screen and (max-width: 750px) {
+  .mapframe {
+    float: none;
+    max-width: 100%
+  }
+}
+.subtitle {
+  color: #fcfcfc;
+  font-size: 16px;
+  margin-top: 0;
+  margin-bottom: 16px
+}
+
+.footer {
+  text-align: center;
+  font-size: 12px;
+}
+
+hr {
+  border: 0;
+  border-top: 1px dotted #ccc;
+  clear: both;
+  margin-top: 15px;
+  margin-bottom: 24px
+}
+input, button {
+  font-family: Lato, Helvetica, Arial, sans-serif
+}
+a {
+  color: #1643a4
+}
+#mc-embedded-subscribe {
+  color: white;
+  background-color: #0d8029;
+  padding: 4px 16px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  border-radius: 4px
+}
+#mc_embed_signup {
+  display: inline-block;
+  padding: 16px;
+  background-color: #e1e1e1;
+  border: 1px dotted #ccc;
+  margin-bottom: 16px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  border-radius: 8px
+}
+@media screen and (max-width: 500px) {
+  #mc_embed_signup {
+    display: block
+  }
+}
+#mce-EMAIL {
+  margin-left: 8px;
+  margin-right: 8px;
+  padding: 4px
+}
+@media screen and (max-width: 500px) {
+  #mce-EMAIL {
+    margin-left: 0px;
+    width: 95%
+  }
+}
+#mce-EMAIL, #mc_embed_signup, #mc-embedded-subscribe {
+  border-width: 1px;
+  border-style: solid
+}
+@media screen and (max-width: 500px) {
+  #mce-EMAIL, #mc-embedded-subscribe {
+    display: block;
+    margin-top: 8px
+  }
+}
